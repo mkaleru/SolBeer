@@ -1,0 +1,8 @@
+applications:
+- name: cf-utah-dabc-client
+  health-check-type: process
+  memory: 512M
+  path: target/UtahDABC-Client-0.0.1-SNAPSHOT.jar
+  services:
+  - solace-messaging-demo-instance-ha
+
